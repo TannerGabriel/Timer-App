@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <EditTextPreference
+        android:key="com.android.example.timer.timer_length"
+        android:title="Timer Length"
+        android:summary="For how many minutes should the timer run?"
+        android:defaultValue="25"
+        android:inputType="number"
+        />
+
+    <EditTextPreference
+        android:key="com.android.example.timer.timer_break_length"
+        android:title="Break Length"
+        android:summary="How long should the break be?"
+        android:defaultValue="5"
+        android:inputType="number"
+        />
+</PreferenceScreen>

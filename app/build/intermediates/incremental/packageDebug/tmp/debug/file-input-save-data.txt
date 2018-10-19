@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Fri Oct 19 19:06:57 CEST 2018
+0.baseType=DIRECTORY
+0.base=C\:\\MainProjects\\TimerApp\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

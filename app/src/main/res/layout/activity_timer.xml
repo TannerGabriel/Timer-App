@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.TimerActivity">
+
+    
+    <ImageView
+        android:id="@+id/background"
+        android:scaleType="centerCrop"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/main_background"
+        android:layout_alignParentBottom="true"/>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/my_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@android:color/white"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <TextView
+        android:id="@+id/time_left_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/information_textview"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="sans-serif"
+        android:text="25:00"
+        android:textColor="#95989A"
+        android:textSize="48dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/information_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/sets_textview"
+        android:layout_centerHorizontal="true"
+        android:text="Work"
+        android:textSize="28dp"
+        android:visibility="invisible"
+        android:textColor="#95989A"/>
+
+    <TextView
+        android:id="@+id/sets_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="1/1"
+        android:textSize="18dp"
+        android:visibility="invisible"
+        android:textColor="#95989A"
+        android:textFontWeight="600"/>
+
+
+    <TextView
+        android:id="@+id/start_timer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:text="Start"
+        android:textSize="24dp"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/stop_timer_textview"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginLeft="16dp"
+        android:src="@drawable/ic_skip"
+        android:visibility="invisible"
+        android:textColor="@android:color/white"
+        />
+
+    <TextView
+        android:id="@+id/pause_timer_textview"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Pause"
+        android:textSize="24dp"
+        android:visibility="invisible"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/stop_session_timer_textview"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_close"
+        android:visibility="invisible"/>
+
+
+
+
+
+</RelativeLayout>
